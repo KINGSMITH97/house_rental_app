@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  AppColors(_);
+  AppColors();
 
   Color kGray200 = const Color(0xffcccccc);
   Color kTeal300 = const Color(0xff59d4de);
