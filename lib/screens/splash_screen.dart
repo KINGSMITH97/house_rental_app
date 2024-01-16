@@ -1,6 +1,7 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:house_rental_app/constants/colors.dart';
+import 'package:house_rental_app/screens/home.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -10,6 +11,19 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    Future.delayed(
+      const Duration(seconds: 5),
+      () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const Home(),
+          )),
+    );
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Material(
